@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#00008b"
+    android:id="@+id/main"
+    >
+
+    <RelativeLayout
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:outlineSpotShadowColor="#2196F3"
+            android:text="The Random Game"
+            android:textColor="#006400"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <Button
+            android:id="@+id/buttonstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:text="Start"
+            android:textColor="#006400"
+            android:textStyle="bold|italic"
+
+            />
+        <TextView
+            android:id="@+id/TVshowmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonstart"
+            android:layout_centerInParent="true"
+            android:text="the number is"
+            android:textColor="#006400"
+
+
+            />
+        <Button
+            android:id="@+id/buttonplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVshowmessage"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:text="+"
+            android:textColor="#006400"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="bold|italic"
+            />
+        <TextView
+            android:id="@+id/TVcurrentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonplus"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:text="0"
+            android:textColor="#006400"
+
+            />
+        <Button
+            android:id="@+id/buttonminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVcurrentnum"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:text="-"
+            android:textColor="#006400"
+            android:textSize="@android:dimen/app_icon_size"
+
+            />
+
+        <TextView
+            android:id="@+id/tvcounter"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_below="@id/buttonrestart"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="300dp"
+            android:background="#8b0000"
+            android:text="counter"
+            android:textAlignment="center"
+            android:textColor="#006400"
+            android:textStyle="bold|italic"
+            />
+
+        <Button
+            android:id="@+id/buttoncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonminus"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:outlineSpotShadowColor="#008B02"
+            android:text="Check"
+            android:textColor="#006400"
+            android:textStyle="bold|italic"
+            />
+        <Button
+            android:id="@+id/buttonrestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttoncheck"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:text="restart"
+            android:textColor="#006400"
+            android:textStyle="bold|italic"
+
+            />
+
+    </RelativeLayout>
+
+    <!-- code from foundnm.xml-->
+
+    <RelativeLayout
+        android:id="@+id/grats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tvfound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonrestart1"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:text="congrats"
+            android:textColor="#006400"
+            android:textStyle="bold|italic"
+            />
+
+
+        <Button
+            android:id="@+id/buttonrestart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#8b0000"
+            android:text="restart"
+            android:textColor="#006400"
+            android:textStyle="bold|italic"
+
+            />
+
+    </RelativeLayout>
+
+
+
+        <!--page relative layout-->  This is visible (visibilty = visible )
+        <!--grats relative layout-->  This is invisible (visibility = gone)
+
+</RelativeLayout>
